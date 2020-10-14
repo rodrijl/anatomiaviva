@@ -1,0 +1,33 @@
+.texto{
+    color:white;
+    text-align: justify;
+    font-size: 25px;
+    padding: 130px;
+}
+.text span{
+    text-align: right;
+}
+.menu {
+
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.menu ul li a{
+    color:white;
+    text-decoration: none;
+    display:block;
+    padding: 20px 120px;
+}
+
+.menu ul li a:hover{
+    color: lightblue;
+}

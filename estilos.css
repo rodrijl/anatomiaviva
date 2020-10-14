@@ -1,54 +1,71 @@
-/* #button {
-    padding: 0;
-    display:flex;
-    justify-content: space-evenly;
-    height: 100%;
-    align-items: center;
-    width: inherit;
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
-    }
+.texto{
+    color:white;
+    text-align: justify;
+    font-size: 25px;
+    padding: 0 130px;
+}
+.contenido{
+    color:white;
+    font-size: 25px;
+    padding: 0 15%;
+    text-shadow: 1px 1px 4px rgb(110 115 115);
+    padding-top: 5%;
+}
 
-#button li {
-        display: inline;
-        }
+.text span{
+    text-align: right;
+}
 
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
 
-#button li a {
-            font-family: 'Roboto', sans-serif;
-            font-size: 15px;
-            text-decoration: none;
-            float: left;
-            padding: 10px 95px;
-            background-color: #495468;
-            color: #fff;
-            }
+.menu ul li{
+    display: inline-block;
+    padding: 20px 30px;
+}
+.menu ul li a{
+    color:white;
+    text-decoration: none;
+    display:block;
+}
 
-#button li a:hover {
-                background-color: #2586d7;
-                margin-top: -2;
-                padding-bottom: 12px;
-                }
+.menu ul li a:hover{
+    color: lightblue;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+}
 
-.botonera {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-} */
-
-.logi img{
-
+.menu-logo .corazon{
     width: 60px;
     height: 60px;
     margin: 10px;
 }
-.logi{
-    display: inline-block
+.menu-logo{
+    display: inline-block;
+    margin-left: 20px;
+}
+.menu-logo .anatomia-viva {
+    width: 105px;
+    margin: -100px 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
 }
 Header{
     display: flex;
     justify-content: space-between;
     background-color: #495468;
     border-bottom: 2px solid;
+    align-items: center;
 }
 
 .contenedor{
@@ -59,61 +76,47 @@ Header{
 }
  
 .texto-encima{
-    font-family: 'Roboto', sans-serif;
     font-size: 40px;
     color:white;
     top: 10px;
     left: 10px;
     margin-bottom: 20px;
 }
-.contenedor img {
-   
-}
 
 body{
-            background-color: #536E80;
-            
+    background-color: #536E80;        
 }
 
 .redes{
-
     display:flex;
     justify-content: space-around;
     margin-bottom: 20px;
-
 }
 
 .info-container{
-
     width: 100%;
     background: #f2f2f2;
-    font-family: Raleway;
 }
 
 .info-main{
-
     width: 95%;
     max-width: 1000px;
     margin:auto;
     text-align: center;
-    padding: 30px 200px;
+    padding: 5% 10%;
 }
 
 .info-main h3{
-
     color: #00C6ee;
     font-size:40px;
     text-align: center;
-
 }
 
 .info-main p{
-
     padding: 20px 0px;
 }
 
 .info-main a{
-
     display:inline-block;
     background: #BF0026;
     color: white;
@@ -122,24 +125,21 @@ body{
 
 
 }
+.info-main a:hover{
+    background:#D61D0B;
+}
 
 footer{
-
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 .footer-container{
-
     width: 100%;
     background: #272727;
     color:white;
-
 }
 
 .footer-main{
-
     width: 98%;
     max-width: 1000px;
     margin: auto;
@@ -147,40 +147,29 @@ footer{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .footer-main .footer-columna {
-
     text-align: justify;
 }
 
-.footer-main .footer-columna:nth-child(2) {
-
-
-}
-
 .footer-main .footer-columna h3{
-
     font-size:32px;
     color: #00C6ee;
     margin-bottom:20px;
-
 }
 
 .footer-main .footer-columna span{
-display:flex;
-margin-left: 5px;
-margin-bottom: 15px;
+    display:flex;
+    margin-left: 5px;
+    margin-bottom: 15px;
 }
 
 .footer-main .footer-columna span p{
     margin-left: 5px;
-    }
-    
+}   
 
 .footer-copy-redes{
-
     width: 100%;
     background: #000;
     border-top:3px solid white;
@@ -224,4 +213,45 @@ margin-bottom: 15px;
     color:black;
     text-align: center;
     
+}
+
+.carousel-caption {
+    height: 100%;
+    padding-top: 10%;
+    padding-right: 20%;
+}
+
+.carousel-caption h1{
+    font-size: 60px;    
+}
+
+
+@media screen and (max-width: 960px) {
+    .carousel-inner h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-inner h1 {
+        font-size: 40px;
+    }
+    .contenido {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .carousel-inner h1 {
+        font-size: 30px;
+    }
+    .contenido {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-inner h1 {
+        font-size: 30px;
+    }
 }

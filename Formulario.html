@@ -4,38 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnatomiaViva-Contacto</title>
-    <link rel="stylesheet" href="Formulario.css">
+    <link rel="stylesheet" href="formulario.css">
     <script src="./formulario.js"></script>
-<style>
-    .logo{
-        display: flex;
-        justify-content: flex-end;
-    }
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="footer/css/all.css">
+    <link  rel="icon" href="images/sangre.svg" type="image/svg" />
+    <link rel="stylesheet" href="./estilos.css">
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_6M8DuWezI3V6YJt0s5s7M"); //use your USER ID
+        })();
+    </script>
 </head>
-
-
-<body>
-
+<body> 
+    <Header>
+        <div class="menu-logo">
+            <a href="./index.html"> 
+                <img class="corazon" src="images/sangre.svg"/>
+                <img class="anatomia-viva" src="./images/logo.png" alt="Logo menu">
+            </a> 
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="informacion.html">Sobre nosotros</a></li>
+                <li><a href="cursos.html">Nuestros cursos</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </div>
+    </Header>
     
-    <form action="">
-    <h2>Contacto</h2>
-    <input type="text" name="nombre" placeholder="Nombre" id="nombre">
-    <div id="errorNombre"></div>
-    <input type="text" name="correo" placeholder="Correo" id="correo">
-    <div id="errorCorreo"></div>
-    <input type="text" name="telefono" placeholder="Telefono" id= "telefono">
-    <div id="errorTelefono"></div>
-    <textarea name="mensaje" placeholder="Escriba aquí su mensaje" id="mensaje"></textarea>
-    <div id="errorMensaje"></div>
-    <input type="submit" id="boton" value = "Enviar" onClick="return enviarFormulario()">
+    <section class="formulario">
+        <form action="">
+            <h2>Contacto</h2>
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                    <div id="errorNombre"></div>
+                <input type="text" name="correo" placeholder="Correo" id="correo">
+                    <div id="errorCorreo"></div>
+                <input type="text" name="telefono" placeholder="Telefono" id="telefono">
+                    <div id="errorTelefono"></div>
+                <textarea name="mensaje" placeholder="Escriba aquí su mensaje" id="mensaje"></textarea>
+                    <div id="errorMensaje"></div>
+                <input type="submit" id="boton" value = "Enviar" onClick="return enviarFormulario()">
+        </form>
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+    </section>
 
-
-    </form>
-    <div class="logo">
-        <img src="./images/logo.png" alt="">
-    </div>
-    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-columna">
+                    <h3>Redes</h3>
+                    <a href="https://www.facebook.com/Anatomia-Viva-Cursos-de-Anatom%C3%ADa-100801905148036/"><img src="./images/icons8-facebook.svg" href="" width="50px"></a> 
+                    <a href="https://twitter.com/AnatomiaViva"><img src="./images/icons8-twitter.svg"  width="50px" margin-left="5px"></a>
+                </div>
+                <div class="footer-columna">
+                    <h3>Email</h3>
+                    <span class="fa fa-envelope"><p>anatomiaviva2020@protonmail.com</p></span>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="footer-copy-redes">
+            <div class="footer-main-redes">
+                <div class="footer-copy">
+                    2020, Todos los derechos reservados - | Anatomía Viva |.
+                </div>
+                <div class="footer-redes">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
 </body>
 </html>

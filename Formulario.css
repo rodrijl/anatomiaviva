@@ -1,10 +1,15 @@
 body {
     background-image: url("./images/heart-2607178_1920.jpg");
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
+    background-size: cover;
     margin: 0;
-    font-family: monospace;
+}
 
+.menu-logo .anatomia-viva {
+    margin: -12px 0 !important;
+}
+
+.fa-envelope:before {
+    margin-top: 17px !important;
 }
 
 form{
@@ -15,34 +20,29 @@ form{
     box-sizing: border-box;
     margin-top: 20px;
     border-radius: 7px;
-
 }
 
 h2{
-color:white;
-text-align: center;
-margin:0;
-font-size: 30px;
-margin-bottom: 20px;
-
+    color:white;
+    text-align: center;
+    margin:0;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
-input,textarea, button{
-
+input, textarea, button{
     width: 100%;
     margin-top: 20px;
     padding:7px;
     box-sizing: border-box;
     font-size: 17px;
     border: none;
-
 }
 
 textarea{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-height: 100px;
     max-height: 200px;
-max-width: 100%;
+    max-width: 100%;
 }
 
 #boton{
@@ -56,14 +56,17 @@ max-width: 100%;
 }
 
 @media (max-width: 480px) {
-
     form{
         width:100%
     }
-
 }
 
 #errorMensaje, #errorCorreo,#errorTelefono,#errorNombre{ 
-background:rgba(0,0,0,0.1);
-color: coral;
+    background:rgba(0,0,0,0.1);
+    color: coral;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
 }
